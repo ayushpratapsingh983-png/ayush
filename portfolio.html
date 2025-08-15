@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap"
         rel="stylesheet">
+    <!-- Load Font Awesome for project icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS for gradients and animations -->
     <style>
         /* General body styling for a dark theme */
@@ -31,7 +33,8 @@
             height: 100%;
             object-fit: cover;
             z-index: -10;
-            filter: brightness(0.5); /* Dim the background for better text readability */
+            filter: brightness(0.5);
+            /* Dim the background for better text readability */
         }
 
         /* Gradient text for titles */
@@ -116,9 +119,7 @@
 <body>
 
     <!-- Background Image -->
-    <!-- Replaced with a placeholder image URL -->
-    <img src="honey.jpg" alt="Dark textured background"
-        class="background-image">
+    <img src="honey.jpg" alt="Dark textured background" class="background-image">
 
     <!-- Navigation Bar -->
     <nav class="blurred-bg shadow-lg fixed w-full z-20 top-0">
@@ -202,7 +203,7 @@
             <div
                 class="home-hero-content-container p-10 rounded-xl max-w-2xl mx-auto space-y-4 shadow-lg z-10 transition-transform duration-500">
                 <!-- Profile Image with placeholder URL -->
-                <img src="https://placehold.co/144x144/a855f7/ffffff?text=AYUSH"
+                <img src="photo.jpg"
                     alt="Ayush Pratap Singh's Profile Picture"
                     class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-indigo-500 shadow-md">
 
@@ -234,47 +235,69 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills Section - ENHANCED VERSION -->
         <section id="skills" class="py-20 blurred-bg fade-in-on-scroll">
-            <div class="max-w-4xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-white mb-8 text-center font-['Montserrat']">Skills</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Skills Item 1 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-indigo-500 text-center">
-                        <span class="text-4xl">&#128187;</span> <!-- Computer emoji -->
-                        <h3 class="text-xl font-semibold mt-4 text-white">Front-End Development</h3>
-                        <p class="text-gray-300 mt-2">HTML, CSS, JavaScript, React.js, Tailwind CSS</p>
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-white mb-12 text-center font-['Montserrat']">Skills</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Skill Card: Security & Penetration Testing -->
+                    <div
+                        class="bg-gray-800 p-8 rounded-xl shadow-lg border border-indigo-500/50 transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-indigo-500/50">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl text-indigo-400 mr-4">&#128272;</span>
+                            <h3 class="text-2xl font-bold text-white">Security & Testing</h3>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li><strong>Penetration Testing</strong> (Metasploit)</li>
+                            <li><strong>Web App Testing</strong> (Burp Suite)</li>
+                            <li><strong>Network Scanning</strong> (Angry IP Scanner)</li>
+                            <li><strong>SIEM Platforms</strong> (Splunk, Wazuh)</li>
+                        </ul>
                     </div>
-                    <!-- Skills Item 2 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-indigo-500 text-center">
-                        <span class="text-4xl">&#128221;</span> <!-- Writing emoji -->
-                        <h3 class="text-xl font-semibold mt-4 text-white">Back-End Development</h3>
-                        <p class="text-gray-300 mt-2">Node.js, Express.js, REST APIs</p>
+
+                    <!-- Skill Card: Programming Languages -->
+                    <div
+                        class="bg-gray-800 p-8 rounded-xl shadow-lg border border-indigo-500/50 transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-indigo-500/50">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl text-indigo-400 mr-4">&#128187;</span>
+                            <h3 class="text-2xl font-bold text-white">Programming & DSA</h3>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li><strong>Python</strong> (with Django)</li>
+                            <li><strong>JavaScript</strong></li>
+                            <li><strong>Java</strong></li>
+                            <li><strong>C</strong> (with Data Structures)</li>
+                        </ul>
                     </div>
-                    <!-- Skills Item 3 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-indigo-500 text-center">
-                        <span class="text-4xl">&#128190;</span> <!-- Disk emoji -->
-                        <h3 class="text-xl font-semibold mt-4 text-white">Databases</h3>
-                        <p class="text-gray-300 mt-2">MongoDB, PostgreSQL</p>
+
+                    <!-- Skill Card: Front-End Development -->
+                    <div
+                        class="bg-gray-800 p-8 rounded-xl shadow-lg border border-indigo-500/50 transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-indigo-500/50">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl text-indigo-400 mr-4">&#128187;</span>
+                            <h3 class="text-2xl font-bold text-white">Web Development</h3>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li><strong>Front-End:</strong> HTML, CSS, JavaScript, React.js</li>
+                            <li><strong>Back-End:</strong> Node.js, Express.js, REST APIs</li>
+                            <li><strong>Styling:</strong> Tailwind CSS</li>
+                        </ul>
                     </div>
-                    <!-- Skills Item 4 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-indigo-500 text-center">
-                        <span class="text-4xl">&#128214;</span> <!-- Book emoji -->
-                        <h3 class="text-xl font-semibold mt-4 text-white">Version Control</h3>
-                        <p class="text-gray-300 mt-2">Git, GitHub</p>
+
+                    <!-- Skill Card: Operating Systems & Tools -->
+                    <div
+                        class="bg-gray-800 p-8 rounded-xl shadow-lg border border-indigo-500/50 transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-indigo-500/50">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl text-indigo-400 mr-4">&#128190;</span>
+                            <h3 class="text-2xl font-bold text-white">Systems & Tools</h3>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li><strong>Operating Systems:</strong> Kali Linux, Ubuntu, Centos, Windows</li>
+                            <li><strong>Version Control:</strong> Git, GitHub</li>
+                        </ul>
                     </div>
-                    <!-- Skills Item 5 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-indigo-500 text-center">
-                        <span class="text-4xl">&#128214;</span> <!-- Book emoji -->
-                        <h3 class="text-xl font-semibold mt-4 text-white">Project Management</h3>
-                        <p class="text-gray-300 mt-2">Jira, Trello</p>
-                    </div>
-                    <!-- Skills Item 6 -->
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-md border border-indigo-500 text-center">
-                        <span class="text-4xl">&#128214;</span> <!-- Book emoji -->
-                        <h3 class="text-xl font-semibold mt-4 text-white">Cloud</h3>
-                        <p class="text-gray-300 mt-2">Google Cloud, AWS</p>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -284,28 +307,22 @@
             <div class="max-w-4xl mx-auto px-6">
                 <h2 class="text-4xl font-bold text-white mb-8 text-center font-['Montserrat']">Education</h2>
                 <div class="space-y-8">
-                    <!-- Education Item 1 -->
+                    <!-- Education Item 1: College -->
                     <div
                         class="bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-indigo-500 transition duration-300 hover:scale-[1.02]">
-                        <h3 class="text-2xl font-semibold text-white">University of Technology</h3>
-                        <p class="text-indigo-300 text-lg">Bachelor of Science in Computer Science</p>
-                        <p class="text-gray-300">2018 - 2022</p>
+                        <h3 class="text-2xl font-semibold text-white">Lucknow University, Lucknow</h3>
+                        <p class="text-indigo-300 text-lg">Bachelor of Computer Application (BCA)</p>
+                        <p class="text-gray-300">2023 - 2025</p>
                         <ul class="list-disc list-inside mt-4 text-gray-300">
-                            <li>Graduated with Honors</li>
-                            <li>Completed a thesis on "Modern Web Frameworks"</li>
                             <li>Active member of the university's Coding Club</li>
                         </ul>
                     </div>
-                    <!-- Education Item 2 -->
+                    <!-- Education Item 2: High School -->
                     <div
                         class="bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-indigo-500 transition duration-300 hover:scale-[1.02]">
-                        <h3 class="text-2xl font-semibold text-white">High School Name</h3>
-                        <p class="text-indigo-300 text-lg">High School Diploma</p>
-                        <p class="text-gray-300">2014 - 2018</p>
-                        <ul class="list-disc list-inside mt-4 text-gray-300">
-                            <li>Focused on Science and Mathematics</li>
-                            <li>Participated in the annual Science Fair</li>
-                        </ul>
+                        <h3 class="text-2xl font-semibold text-white">Red Rose Senior Secondary School, Lucknow</h3>
+                        <p class="text-indigo-300 text-lg">10th Standard (2020) & 12th Standard (2022)</p>
+                        <p class="text-gray-300">Computer Science & Mathematics Stream</p>
                     </div>
                 </div>
             </div>
@@ -316,35 +333,63 @@
             <div class="max-w-4xl mx-auto px-6">
                 <h2 class="text-4xl font-bold text-white mb-8 text-center font-['Montserrat']">Achievements</h2>
                 <div class="space-y-6">
-                    <!-- Achievement Item 1 -->
+
+                    <!-- Achievement Item 1: Full Stack Development -->
                     <div
                         class="flex flex-col md:flex-row items-center md:items-start bg-gray-800 p-6 rounded-lg shadow-md transition duration-300 hover:scale-[1.02]">
                         <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
-                            <span class="text-indigo-300 text-4xl">&#127941;</span>
+                            <span class="text-indigo-300 text-4xl">⌨️</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-semibold text-white mb-1">Won 1st Place in a Local Hackathon</h3>
+                            <h3 class="text-2xl font-semibold text-white mb-1">Full Stack Development Certification</h3>
                             <p class="text-gray-300 text-center md:text-left">
-                                Developed a real-time chat application with a team of three, demonstrating proficiency in
-                                front-end and back-end integration.
+                                Completed a comprehensive program in full stack development, gaining expertise in **HTML**, **CSS**, **Bootstrap**, **Python**, and **Django**.
                             </p>
                         </div>
                     </div>
-                    <!-- Achievement Item 2 -->
+
+                    <!-- Achievement Item 2: Certified Ethical Hacker -->
                     <div
                         class="flex flex-col md:flex-row items-center md:items-start bg-gray-800 p-6 rounded-lg shadow-md transition duration-300 hover:scale-[1.02]">
                         <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
-                            <span class="text-indigo-300 text-4xl">&#127891;</span>
+                            <span class="text-indigo-300 text-4xl">🔐</span>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-semibold text-white mb-1">Certified in Full Stack Web
-                                Development</h3>
+                            <h3 class="text-2xl font-semibold text-white mb-1">Certified Ethical Hacker (CEH)</h3>
                             <p class="text-gray-300 text-center md:text-left">
-                                Completed a rigorous 6-month program covering JavaScript, React, Node.js, and database
-                                management.
+                                Currently pursuing this certification to master the fundamental skills of ethical hacking and strengthen defensive security.
                             </p>
                         </div>
                     </div>
+
+                    <!-- Achievement Item 3: Certified Red Team Associate -->
+                    <div
+                        class="flex flex-col md:flex-row items-center md:items-start bg-gray-800 p-6 rounded-lg shadow-md transition duration-300 hover:scale-[1.02]">
+                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                            <span class="text-indigo-300 text-4xl">🛡️</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white mb-1">Certified Red Team Associate (CRTA)</h3>
+                            <p class="text-gray-300 text-center md:text-left">
+                                Actively working towards this certification to build a strong foundation in offensive security and practical penetration testing techniques.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement Item 4: Multi-Cloud Red Team Analyst -->
+                    <div
+                        class="flex flex-col md:flex-row items-center md:items-start bg-gray-800 p-6 rounded-lg shadow-md transition duration-300 hover:scale-[1.02]">
+                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                            <span class="text-indigo-300 text-4xl">☁️</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white mb-1">Multi-Cloud Red Team Analyst (MCRTA)</h3>
+                            <p class="text-gray-300 text-center md:text-left">
+                                Commited to obtaining this advanced certification to specialize in attacking and defending modern cloud infrastructures.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -357,24 +402,29 @@
                 <h2 class="text-4xl font-bold text-white mb-12 text-center font-['Montserrat']">My Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <!-- Project Card 1 -->
+                    <!-- Project Card 1: School Management System -->
                     <div
                         class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700 transform transition duration-500 hover:scale-105 hover:shadow-indigo-500/50">
-                        <!-- Replace with your project image -->
-                        <img src="https://placehold.co/600x400/1f2937/a855f7?text=Project+One"
-                            alt="Project One Thumbnail" class="w-full h-48 object-cover">
+                        <!-- Placeholder image for the new project -->
+                        <img src="https://placehold.co/600x400/1f2937/a855f7?text=School+Management+System"
+                            alt="School Management System Thumbnail" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-2xl font-bold text-white mb-2">E-Commerce Platform</h3>
+                             <div class="flex items-center space-x-2 mb-2">
+                                <i class="fas fa-school text-indigo-300 text-2xl"></i>
+                                <h3 class="text-2xl font-bold text-white">School Management System</h3>
+                            </div>
                             <p class="text-gray-300 mb-4">
-                                A full-featured online store with product listings, a shopping cart, and a secure checkout process.
+                                A comprehensive web application for managing school operations, including student enrollment, attendance tracking, and grading.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span
-                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">React</span>
+                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">Python</span>
                                 <span
-                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">Node.js</span>
+                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">Django</span>
                                 <span
-                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">MongoDB</span>
+                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">HTML</span>
+                                <span
+                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">CSS</span>
                             </div>
                             <div class="flex justify-between items-center mt-6">
                                 <a href="#" target="_blank"
@@ -392,23 +442,28 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 2 -->
+                    <!-- Project Card 2: Basic Network Vulnerability Scanner -->
                     <div
                         class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700 transform transition duration-500 hover:scale-105 hover:shadow-indigo-500/50">
-                        <img src="https://placehold.co/600x400/1f2937/a855f7?text=Project+Two"
-                            alt="Project Two Thumbnail" class="w-full h-48 object-cover">
+                        <!-- Placeholder image for the new project -->
+                        <img src="https://placehold.co/600x400/1f2937/a855f7?text=Network+Scanner"
+                            alt="Network Vulnerability Scanner Thumbnail" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-2xl font-bold text-white mb-2">Task Management App</h3>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <i class="fas fa-lock text-indigo-300 text-2xl"></i>
+                                <h3 class="text-2xl font-bold text-white">Basic Network Vulnerability Scanner</h3>
+                            </div>
                             <p class="text-gray-300 mb-4">
-                                A web app to help users organize tasks, set deadlines, and track progress with a clean, intuitive UI.
+                                A command-line tool built to scan a network for active hosts, open ports, and potential security weaknesses.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span
-                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">JavaScript</span>
+                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">Python</span>
                                 <span
-                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">TailwindCSS</span>
+                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">Scapy</span>
                                 <span
-                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">Firebase</span>
+                                    class="bg-indigo-500/50 text-indigo-200 text-sm font-semibold px-2.5 py-1 rounded-full">Command
+                                    Line</span>
                             </div>
                             <div class="flex justify-between items-center mt-6">
                                 <a href="#" target="_blank"
@@ -426,7 +481,7 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 3 -->
+                    <!-- Project Card 3: Personal Blog (as requested, this remains unchanged) -->
                     <div
                         class="bg-gray-800 rounded-lg overflow-hidden shadow-lg border border-gray-700 transform transition duration-500 hover:scale-105 hover:shadow-indigo-500/50">
                         <img src="https://placehold.co/600x400/1f2937/a855f7?text=Project+Three"
@@ -514,7 +569,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12 text-center">
         <div class="max-w-6xl mx-auto px-6">
-            <p>&copy; <span id="current-year"></span> Ayush Pratap Singh. All Rights Reserved.</p>
+            <p>&copy; <span id="current-year"></span> Ayush Pratap Singh.</p>
         </div>
     </footer>
 
@@ -524,43 +579,73 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Typing animation for the hero section
-        function setupTypewriter(text) {
-            const element = document.getElementById('typewriter');
-            let i = 0;
-            const typingInterval = 50;
-            function typeWriter() {
-                if (i < text.length) {
-                    element.innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, typingInterval);
-                }
+        const typewriterElement = document.getElementById('typewriter');
+        const phrases = [
+            "A Full Stack Web Developer",
+            "A Cyber Security Enthusiast",
+            "A Problem Solver"
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            if (isDeleting) {
+                typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
             }
-            typeWriter();
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                typeSpeed = 2000; // Pause at the end of a phrase
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500; // Pause before typing the next phrase
+            }
+
+            setTimeout(type, typeSpeed);
         }
 
-        const myDescription = "A passionate and creative individual ready to build amazing things.";
-        setupTypewriter(myDescription);
-
-        // Fade-in-on-scroll animation for sections
-        const sections = document.querySelectorAll('.fade-in-on-scroll');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typewriterElement) {
+                type();
+            }
         });
 
-        sections.forEach(section => {
-            observer.observe(section);
+        // Fade-in-on-scroll functionality
+        const fadeElements = document.querySelectorAll('.fade-in-on-scroll');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2 // Trigger when 20% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                // Corrected the conditional check from `is-visible` to `isIntersecting`
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Stop observing once it's visible
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
         });
 
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
